@@ -6,23 +6,23 @@ Overview
 The Arduino Leonardo acts as a USB HID device, automatically typing commands or executing scripts once plugged into a target machine. It can be used for automation, penetration testing, or demonstration purposes.
 Requirements
 
-    Arduino Leonardo (or any board with USB HID capabilities)
+Arduino Leonardo (or any board with USB HID capabilities)
 
-    Arduino IDE ([download here](https://www.arduino.cc/en/software))
+Arduino IDE ([download here](https://www.arduino.cc/en/software))
 
-    USB cable to connect your Arduino
+USB cable to connect your Arduino
 
 Installation
 
-    Clone or download this repository.
+Clone or download this repository.
 
-    Open the Arduino IDE and load the sketch.
+Open the Arduino IDE and load the sketch.
 
-    Connect your Arduino Leonardo to your computer.
+Connect your Arduino Leonardo to your computer.
 
-    Select Arduino Leonardo as the board in the IDE.
+Select Arduino Leonardo as the board in the IDE.
 
-    Upload the sketch to the Arduino.
+Upload the sketch to the Arduino.
 
 Usage
 
