@@ -8,7 +8,7 @@ Requirements
 
     Arduino Leonardo (or any board with USB HID capabilities)
 
-    Arduino IDE (download here)
+    Arduino IDE ([download here](https://www.arduino.cc/en/software))
 
     USB cable to connect your Arduino
 
