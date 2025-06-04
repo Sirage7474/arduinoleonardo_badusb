@@ -20,11 +20,11 @@ https://github.com/Sirage7474/arduinoleonardo_badusb.git
 
 Run
 ```
-cd Reverse-Shell-Arduino
+cd arduinoleonardo_badusb cd ReverseAcces
 ```
 
 ```
-sudo ruby reverse-shell-arduino.rb
+sudo ruby reverse-shell.rb
 ```
 
 If your on Termux
