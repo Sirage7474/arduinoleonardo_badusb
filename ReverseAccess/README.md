@@ -27,10 +27,6 @@ cd arduinoleonardo_badusb cd ReverseAcces
 sudo ruby reverse-shell.rb
 ```
 
-If your on Termux
-```
-ruby reverse-shell-arduino-termux.rb
-```
 
 ### Tested on Kali Linux
 
