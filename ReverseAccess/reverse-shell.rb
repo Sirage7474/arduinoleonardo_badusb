@@ -2,7 +2,7 @@
 #Thanks to @mattifestation exploit-monday.com and Dave Kennedy.
 #Works for Arduino Leonardo and others
 #Code By @Sirage7474
-#https://github.com/Sirage7474/Reverse-Shell-Arduino
+#https://github.com/Sirage7474/ReverseAccess
 
 require 'base64'
 require 'readline'
@@ -179,5 +179,5 @@ shell_setup(encoded_command)
 arduino_setup(host)
 msf_setup = rgets('Would you like to start the listener?[yes/no] ')
 metasploit_setup(msf_path, host, port) if msf_setup == 'yes'
-print_info("Thanks For Using Rᴇᴠᴇʀsᴇ-Sʜᴇʟʟ-Aʀᴅᴜɪɴᴏ Made By @Sirage7474\n")
+print_info("Thanks For Using Rᴇᴠᴇʀsᴇ-Sʜᴇʟʟ Made By @Sirage7474\n")
 end
